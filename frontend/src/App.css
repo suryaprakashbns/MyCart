@@ -1,0 +1,164 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: #232f3e;
+    padding: 0.8rem 1rem;
+}
+
+.navbar-brand h3 {
+    color: #ffffff;
+    margin: 0;
+}
+
+#cart, #cart_count {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+#cart_count {
+    background-color: #ff9900;
+    border-radius: 50%;
+    padding: 2px 8px;
+    margin-left: 4px;
+}
+
+#products_heading {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+#products .card {
+    height: 100%;
+    transition: 0.2s ease-in-out;
+    border: 1px solid #e3e3e3;
+}
+
+#products .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-3px);
+}
+
+.card-img-top {
+    width: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+#view_btn {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+}
+
+#view_btn:hover {
+    background-color: #e68a00;
+    color: #fff;
+}
+
+.rating-outer {
+    display: inline-block;
+    position: relative;
+    font-family: FontAwesome;
+    color: #ddd;
+}
+
+.rating-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+.rating-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #ff9900;
+}
+
+.rating-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+}
+
+#no_of_reviews {
+    font-size: 0.85rem;
+    color: #777;
+    margin-left: 6px;
+}
+
+#product_price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #232f3e;
+}
+
+#cart_btn, #view_btn {
+    border-radius: 4px;
+}
+
+.stockCounter input {
+    width: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.greenColor {
+    color: green;
+}
+
+.redColor {
+    color: red;
+}
+
+.wrapper {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper form {
+    max-width: 500px;
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+#order_summary {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e3e3e3;
+}
+
+.order-summary-values {
+    float: right;
+    font-weight: 600;
+}
+
+#checkout_btn, .btn-block {
+    background-color: #ff9900;
+    border: none;
+}
+
+#checkout_btn:hover, .btn-block:hover {
+    background-color: #e68a00;
+}
+
+.cart-item {
+    padding: 0.5rem 0;
+}
+
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
