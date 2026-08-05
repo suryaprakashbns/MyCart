@@ -1,4 +1,4 @@
-# JVL Cart Clone
+# MyCart
 
 A MERN stack e-commerce app (products, auth, cart, checkout, orders, image upload).
 
