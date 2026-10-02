@@ -13,7 +13,7 @@ import {
     LOGOUT_FAIL,
     CLEAR_ERRORS,
 } from "../constants/userConstants";
-
+import { CLEAR_CART } from "../constants/cartConstants";
 export const login = (email, password) => async (dispatch) => {
     try {
         dispatch({ type: LOGIN_REQUEST });
@@ -67,7 +67,12 @@ export const loadUser = () => async (dispatch) => {
 export const logout = () => async (dispatch) => {
     try {
         await axios.get("/api/v1/logout");
+
         dispatch({ type: LOGOUT_SUCCESS });
+        dispatch({ type: CLEAR_CART });
+
+        localStorage.removeItem("cartItems");
+        localStorage.removeItem("shippingInfo");
     } catch (error) {
         dispatch({ type: LOGOUT_FAIL, payload: error.response.data.message });
     }
