@@ -87,9 +87,9 @@ function AppContent() {
                         <Route
                            path="/orders/me"
                             element={
-                           <AdminRoute>
+                          
                              <MyOrders />
-                          </AdminRoute>
+                         
                                     }
                              exact
                          />
