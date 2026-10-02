@@ -87,9 +87,9 @@ function AppContent() {
                         <Route
                            path="/orders/me"
                             element={
-                          
+                          <ProtectedRoute>
                              <MyOrders />
-                         
+                          </ProtectedRoute>
                                     }
                              exact
                          />
